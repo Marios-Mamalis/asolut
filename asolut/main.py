@@ -304,4 +304,5 @@ def gui():
     def encs():
         return enccs
 
-    eel.start('main.html', size=(600, 850))
+    eel.start('main.html', size=(600, 850), port=8118)
+
