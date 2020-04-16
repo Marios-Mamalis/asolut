@@ -25,7 +25,7 @@ from inflect import engine
 import numpy as np
 from itertools import chain
 from plotly import offline
-import plotly.graph_objects as go
+import plotly.graph_objs as go
 from pandas import DataFrame
 from os import path
 import eel
@@ -227,7 +227,7 @@ def freqs(textlist, sortedby='sum', returntype='plot', figtitle='plot', numb=Non
             )
         ))
 
-        fig.update_layout(barmode='stack',
+        fig.layout.update(barmode='stack',
                           xaxis_title="Counts",
                           yaxis_title="Words",
                           title_text=("Paper's doi:<br>" +
