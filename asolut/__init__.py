@@ -1,1 +1,1 @@
-from asolut import *
+from main import *

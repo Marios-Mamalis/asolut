@@ -1,0 +1,15 @@
+include README.md
+include LICENSE
+include asolut/web/main_js.js
+include asolut/web/main_css.css
+include asolut/web/main.html
+include asolut/web/images/que.svg
+include asolut/web/images/logo.png
+include asolut/web/images/loadinggear.svg
+include asolut/web/images/gear.svg
+include asolut/web/images/favicon.ico
+include asolut/web/images/arr.svg
+include asolut/web/fonts/LICENSE.txt
+include asolut/web/fonts/OpenSans-Light.ttf
+include asolut/web/fonts/OpenSans-Regular.ttf
+include asolut/web/fonts/OpenSans-SemiBold.ttf
