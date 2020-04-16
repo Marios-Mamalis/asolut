@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asolut</title>
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="main_js.js"></script>
+  <link rel="stylesheet" type="text/css" href="main_css.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <!--Beginning Start-->
+    <div class="beginning">
+        <h1 class="logotitle">Asolut</h1>
+    </div>
+    <!--Beginning End-->
+    <div class="full_wrapper">
+        <!-- Choose File Start-->
+        <p class="segment_title">Choose File</p>
+        <div class="segment_items">
+            <div class="file_container">
+                <button id="staysame" onclick="get_file_name()">Choose file</button>
+                <p id="file_name"></p>
+            </div>
+            <div class="encoding_button_container">
+                <input id="encoding_input" onkeyup="autocomplete_enc()" placeholder="--Select Encoding--">
+                <div class="encoding_items" id="encoding_items">
+                </div>
+            </div>
+        </div>
+        <!--Choose File End-->
+        <!--Preprocessing Start-->
+        <p class="segment_title">Preprocessing</p>
+        <div class="segment_items">
+            <div class="mode_keep">
+                <div class="widg_title">
+                    <p>Word Transformations</p>
+                    <img src="images/que.svg" class="questionmark" title="Specify how the words of the text should be transformed">
+                </div>
+                <div class="select_widg_container">
+                    <div class="select_widg">
+                        <input class="slider" id="sub" oninput="change_description_mode()" type="range" min="1" max="4" value="2" step="1">
+                        <div class="cat_names">
+                            <p class="cat_names">Full</p>
+                            <p class="cat_names">Extended</p>
+                            <p class="cat_names">Normal</p>
+                            <p class="cat_names">None</p>
+                        </div>
+                    </div>
+                    <div class="select_desc">
+                        <p class="select_desc" id="select_desc">Remove symbols at the end <br /> and the start</p>
+                    </div>
+                </div>
+                <div class="widg_title">
+                    <p>Stopwords</p>
+                    <img src="images/que.svg" class="questionmark" title="Specify whether stopwords should be included in the final graph">
+                </div>
+                <div class="keep_container">
+                    <p class="no">Omit</p>
+                    <label class="switch">
+                        <input type="checkbox" id="keepswitch">
+                        <span class="sliderc"></span>
+                    </label>                      
+                    <p class="yes">Keep</p>
+                </div>
+            </div>
+            <div class="pos_container">
+                <div class="widg_title">
+                    <p>Parts of speech</p>
+                    <img src="images/que.svg" class="questionmark" title="Choose what parts of speech from the original text should be included in the final graph 
+or leave everything unchecked for default PoS (adjectives, nouns, adverbs and verbs)">
+                </div>
+                <div id="pos_boxes_container" class="pos_boxes_container">
+                </div>
+            </div>
+        </div>
+        <!--Preprocessing End-->
+        <!--Plotting Start-->
+        <p class="segment_title">Plotting</p>
+        <div class="segment_items">
+            <div class="sort_widg_container">
+                <div class="widg_title">
+                    <p>Order</p>
+                    <img src="images/que.svg" class="questionmark" title="Specify how the bars of the final graph should be ordered">
+                </div>
+                <div class="sort_wrap">
+                    <div class="sort_widg">
+                        <input id="sor" class="slider" oninput="change_description_sort()" type="range" min="1" max="3" value="3" step="1">
+                        <div class="mode_cat">
+                            <p class="mode_cat">Both</p>
+                            <p class="mode_cat">Synonyms</p>
+                            <p class="mode_cat">Normals</p>
+                        </div>
+                    </div>
+                    <div class="select_desc">
+                        <p class="desc" id="sort_descr">Sort the bars by the order of the sum of the words' synonyms' frequencies and the words' frequencies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="numb_container">
+                <div class="widg_title">
+                    <p>Number of Bars</p>
+                    <img src="images/que.svg" class="questionmark" title="Choose the number of bars to be shown in the final graph">
+                </div>
+                <div class="numb">
+                    <input type="image" class="arr" onmousedown="upnu()" id="upnumb" src="images/arr.svg">
+                    <input class="numb" id="numbersbars" type="number" value="5">
+                    <input type="image" class="arr" onmousedown="donu()" id="downnumb" src="images/arr.svg">
+                </div>
+            </div>
+        </div>
+        <!--Plotting End-->
+        <!--Submit Button-->
+        <div class="submit">
+            <p id="errortext">Not valid encoding</p>
+            <p id="errortextfile">No text file chosen</p>
+            <button onclick=eel.init_tug()>Submit</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="verline"></div>
+        <p class="attributions">Icons from www.flaticon.com made by Pixel perfect, by Freepik
+             and the <a href="https://www.flaticon.com/free-icon/caret-down_25243" target="_blank">"Caret Down free icon"</a> was made by 
+             <a href="https://www.flaticon.com/authors/dave-gandy" target="_blank">Dave Gandy</a> and liscenced with the <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">"License CC 3.0 BY."</a>
+        </p>
+    </div>
+    <div id="loading_screen">
+        <img src="images/loadinggear.svg" id="lbig" class="lbig">
+        <img src="images/loadinggear.svg" id="lsmol" class="lsmol">
+    </div>
+</body>
+</html>
