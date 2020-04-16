@@ -27,12 +27,12 @@ setup(
         'Natural Language :: English'
     ],
     python_requires='>=3.7.3',
-    install_requires=['nltk', 'inflect', 'numpy', 'plotly', 'pandas', 'eel'],
+    install_requires=['nltk', 'inflect', 'numpy', 'plotly>=2.7', 'pandas', 'eel'],
     project_urls={  # Optional
         "Author's Linkedin": 'https://www.linkedin.com/in/marios-mamalis/',
         'Source': 'https://github.com/Marios-Mamalis/asolut',
     },
-    version='1.1.5',
+    version='1.1.6',
     keywords='word frequency synonyms',
     packages=['asolut'],
     include_package_data=True
