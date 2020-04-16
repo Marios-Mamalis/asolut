@@ -32,16 +32,8 @@ setup(
         "Author's Linkedin": 'https://www.linkedin.com/in/marios-mamalis/',
         'Source': 'https://github.com/Marios-Mamalis/asolut',
     },
-    version='1.1.2',
+    version='1.1.3',
     keywords='word frequency synonyms',
-    include_package_data=True,
-    package_dir={'': 'src'},  # Optional
-    packages=find_packages(where='src'),
-    package_data={
-        'sample': ['web/main_js.js', 'web/main_css.css', 'web/main.html',
-                   'web/images/que.svg', 'web/images/logo.png', 'web/images/loadinggear.svg', 'web/images/gear.svg',
-                   'web/images/favicon.ico', 'web/images/arr.svg',
-                   'web/fonts/LICENSE.txt', 'web/fonts/OpenSans-Light.ttf', 'web/fonts/OpenSans-Regular.ttf',
-                   'web/fonts/OpenSans-SemiBold.ttf']
-    },
+    packages=find_packages(),
+    include_package_data=True
 )
