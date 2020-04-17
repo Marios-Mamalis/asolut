@@ -268,7 +268,7 @@ def freqs(textlist, sortedby='sum', returntype='plot', figtitle='plot', numb=Non
 
 def gui():
     enccs = sorted(list(set([k for k, v in aliases.items()] + [v for k, v in aliases.items()])))
-    eel.init('web')
+    eel.init('asolut/web')
     trmodes = ["none", "normal", "extended", "full"]
     sormodes = ["frequencies", "synonym frequencies", "sum"]
 
