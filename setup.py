@@ -27,7 +27,7 @@ setup(
         'Natural Language :: English'
     ],
     python_requires='>=3.7.3',
-    install_requires=['nltk', 'inflect', 'numpy', 'plotly>=2.7', 'pandas', 'Eel==0.11.0', 'pyinstaller>=3.4'],
+    install_requires=['nltk', 'inflect', 'numpy', 'plotly>=2.7', 'pandas', 'eel>=0.11.0'],
     project_urls={  # Optional
         "Author's Linkedin": 'https://www.linkedin.com/in/marios-mamalis/',
         'Source': 'https://github.com/Marios-Mamalis/asolut',
