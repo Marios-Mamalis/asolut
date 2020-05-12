@@ -35,7 +35,7 @@ from encodings.aliases import aliases
 import codecs
 import logging
 
-def preprocessing(texts, pos=None, chrsplt=' |\\\\|/', keepstopwords=False, mode='normal', chng=True):
+def preprocessing(texts, pos=None, chrsplt='\s|\\\\|/', keepstopwords=False, mode='normal', chng=True):
 
     eng = engine()
     wnl = WordNetLemmatizer()
