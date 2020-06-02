@@ -229,9 +229,10 @@ def freqs(textlist, sortedby='sum', returntype='plot', figtitle='plot', numb=Non
         fig.update_layout(barmode='stack',
                           xaxis_title="Counts",
                           yaxis_title="Words",
-                          title_text=("Paper's doi:<br>" +
-                                      "<a href='doi'>" +
-                                      "A solution for the synonym problem in word frequency algorithms</a>"),
+                          title_text=(# "Paper's doi:<br>" +
+                                      # "<a href='doi'>" +
+                                      "A solution for the synonym problem in word frequency algorithms" # + "</a>"
+                                     ),
                           title_font=dict(
                               size=10),
                           xaxis=dict(
