@@ -32,7 +32,7 @@ setup(
         "Author's Linkedin": 'https://www.linkedin.com/in/marios-mamalis/',
         'Source': 'https://github.com/Marios-Mamalis/asolut',
     },
-    version='1.2.12',
+    version='1.2.13',
     keywords='word frequency synonyms',
     packages=['asolut'],
     include_package_data=True
