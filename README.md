@@ -122,4 +122,4 @@ The last function offers a Graphical User Interface that is used as a way to mak
 
 
 <hr />
-For more information on the original versions, visit the paper: DOI: [10.13140/RG.2.2.14789.27369](https://www.researchgate.net/publication/344713286_A_solution_for_the_synonym_problem_in_word_frequency_algorithms)
+For more information on the original versions, visit the paper: DOI: <a href="https://www.researchgate.net/publication/344713286_A_solution_for_the_synonym_problem_in_word_frequency_algorithms">10.13140/RG.2.2.14789.27369</a>
