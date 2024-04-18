@@ -7,7 +7,7 @@
 <hr />
 
 <!-- ![PyPI - Downloads](https://img.shields.io/pypi/dm/asolut?color=dark-green) -->
-[![Downloads](https://static.pepy.tech/badge/asolut)](https://pepy.tech/project/asolut) ![PyPI - License](https://img.shields.io/pypi/l/asolut?color=red) ![PyPI](https://img.shields.io/pypi/v/asolut?label=version)
+[![Downloads](https://static.pepy.tech/personalized-badge/asolut?period=total&left_color=grey&right_color=yellow&left_text=Downloads)](https://pepy.tech/project/asolut) ![PyPI - License](https://img.shields.io/pypi/l/asolut?color=red) ![PyPI](https://img.shields.io/pypi/v/asolut?label=version)
 
 This algorithm’s goal is to augment the regular word frequency algorithms by introducing and incorporating the synonyms of the words in the process of counting frequencies. The algorithm consists of three functions that serve to preprocess the text, count the synonym-incorporating frequencies and finally to offer a Graphical User Interface for the users who want to avoid coding.
 
