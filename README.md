@@ -51,7 +51,8 @@ The predefined RegEx patterns are as follows:
 - `chng: bool`, default=`True`  
 Specifies whether words should be  lemmatized (`True`) or not (`False`).
 
-#### Returns: `[str, ...]`  
+#### Returns:
+- `textlist: [str, ...]`    
 The pre-processed text as a list of tokens.
 
 ### asolut.freqs
@@ -85,8 +86,9 @@ Specifies the number of bars depicted in the barplot. If `None`, `numb` is given
 `numb = min(15, n_unique, numb_input) if numb_input < 0 else min(15, n_unique)`, where `n_unique` is the number of unique words after pre-processing
 and `numb_input` is the user input for the `numb` parameter. The input must be a positive integer.
 
-#### Returns: `pandas.DataFrame or None`
-The `pandas.DataFrame` object is of the following format:
+#### Returns: 
+- `data: pandas.DataFrame or None`  
+The DataFrame containing the calculated counts. It is of the following format:
 
 | Words     | Counts | Synonym Counts | List of synonyms      |
 |-----------|--------|----------------|-----------------------|
