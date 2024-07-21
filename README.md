@@ -82,8 +82,17 @@ If a plot is chosen to be generated, it is of the following format:
 - `figtitle: str`, default=`"plot"`  
 If a plot was chosen to be created, this parameter specifies the filename under which it will be saved.
 - `numb: int`, default=`None`  
-Specifies the number of bars depicted in the barplot. If `None`, `numb` is given by this function: 
-`numb = min(15, n_unique, numb_input) if numb_input < 0 else min(15, n_unique)`, where `n_unique` is the number of unique words after pre-processing
+Specifies the number of bars depicted in the barplot. The value of `numb` is given by this function:
+
+$$
+numb = 
+\begin{cases} 
+min(15, n\\_unique, numb\\_input) & \text{, if } numb\\_input \gt 0 \\
+min(15, n\\_unique) & \text{, if } numb\\_input \le 0
+\end{cases} 
+$$
+
+where `n_unique` is the number of unique words after pre-processing
 and `numb_input` is the user input for the `numb` parameter. The input must be a positive integer.
 
 #### Returns: 
