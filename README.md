@@ -15,6 +15,7 @@ The package requires Python 3.7.3 and can be installed through PyPi with the fol
 ```commandline
 pip install asolut
 ```
+Additionaly, the NLTK `stopwords`, `averaged_perceptron_tagger` and `wordnet` resources are needed.
 
 ## Reference
 ### asolut.preprocessing
